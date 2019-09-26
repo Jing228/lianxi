@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-                 .warp {
+                 .warp .one{
                        display: flex;
                        height: 75px;
                        width: 75px;
@@ -14,12 +14,14 @@
                        border-radius: 15px;
                        background-color:pink;
                        flex-direction: column;
-                       justify-content: space-between;
-                       
-                       
+                      justify-content: flex-start;
+                 } 
+               .two {
+                   justify-content: flex-end;
+               }        
                       
                     
-                }
+                
                 .item {
                     height: 15px;
                     width: 15px;
@@ -33,10 +35,15 @@
 </head>
 <body>
         <div class="warp">
-                <span class="item" ></span>
-                <span class="item"></span>
-                <span class="item"></span>
-                <span class="item"></span>
+               <div class="one">
+                    <span class="item" ></span>
+                    <span class="item"></span>
+               </div> 
+               <div class="two">
+                  <span class="item"></span>
+                  <span class="item"></span>
+               </div>
+               
           </div>
 </body>
 </html>
