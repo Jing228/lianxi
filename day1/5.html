@@ -13,13 +13,21 @@
                        margin: 15px auto;
                        border-radius: 15px;
                        background-color:pink;
-                       flex-direction: column;
-                       justify-content:space-between;
-                       
+                     flex-direction: column;
+                     justify-content: space-between;
                        
                       
                     
                 }
+                .one {
+                      display: flex;
+                      justify-content:space-between;
+                      
+               }
+              .one:nth-child(2) {
+                   align-self: center;
+               }
+          
                 .item {
                     height: 15px;
                     width: 15px;
@@ -27,20 +35,25 @@
                     border-radius: 50px;
 
                 }
-               .item:nth-child(3) {
-                   align-self: center;
-               }
+           
     
     
     </style>
 </head>
 <body>
         <div class="warp">
-                <span class="item" ></span>
-                <span class="item"></span>
-                <span class="item"></span>
-                <span class="item"></span>
-                <span class="item"></span>
+                <div class="one">
+                    <span class="item" ></span>
+                    <span class="item"></span>
+               </div>
+               <div class="one">
+                    <span class="item"></span>
+               </div>
+               <div class="one">
+                    <span class="item"></span>
+                    <span class="item"></span>
+               </div>
+             
           </div>
 </body>
 </html>

@@ -6,29 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-           
-                .warp {
+                 .warp {
                        display: flex;
                        height: 75px;
                        width: 75px;
                        margin: 15px auto;
                        border-radius: 15px;
                        background-color:pink;
-                       justify-content: center;
+                       flex-direction: column;
+                       justify-content: space-between;
                        align-items: center;
+                 }
+                 .item:nth-child(2) {
+                  align-self: center;}
+                 .item:nth-child(3) {
+                  align-self: flex-end;}
+ 
                     
-                }
-                item {
+                
+                   .item {
                     height: 15px;
                     width: 15px;
                     background-color: black;
                     border-radius: 50px;
+
+                }
+                .item:nth-child(1) {
+                    align-self: flex-start
+                }
+                .item:nth-child(3) {
+                    align-self:flex-end
                 }
     </style>
 </head>
 <body>
-               <div class="warp">
-                   <span class="item"></span>
-               </div>
+         <div class="warp">
+               <span class="item" ></span>
+               <span class="item"></span>
+               <span class="item"></span>
+         </div>
 </body>
 </html>
