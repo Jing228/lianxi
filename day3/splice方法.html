@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+          <script>
+                       //删除方法
+                      // 2,6,7,10
+                       var arr =["2","4","6","7","10"]
+                       arr2=arr.splice(1,1);
+                       alert(arr2);
+                       //插入方法
+                       //2,6,7,10,lj
+                       arr3=arr2.splice(3,0,"lj");
+                       alert(arr3);
+                       //替换方法
+                       //2,haha,女，7,10，lj
+                       arr4=arr3.splice(1,1,"haha","女");
+                       alert(arr4);
+
+          </script>
+</body>
+</html>
